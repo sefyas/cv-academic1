@@ -88,6 +88,11 @@
   {\reversemarginpar\strut\marginnote{{\small#1}}}%
 }
 
+\newcommand{\pubnumber}[1]{%
+  % Forces notes to appear on the left
+  {\reversemarginpar\strut\marginnote{{\small#1}}}%
+}
+
 
 % Required to support footnote references; has to come *after* the
 % `marginnote` package, though, because it redefines some things.
@@ -199,8 +204,9 @@ G.\ Lemaître, The Primeval Atom --- An Essay on Cosmogony\\[.2cm]
 \years{1931}%
 G.\ Lemaître, L'Hypothèse de l'atome primitif\\[.2cm]
 %
-\years{1927}%
+\years{1927} [1cm]%
 %
+\pubnumber{p1}
 G.\ Lemaître, \emph{Un univers homogène de masse constante et de rayon
 croissant rendant compte de la vitesse radiale des nébuleuses
 extragalactiques}, Annals of the Scientific Society of Brussels, 47A:41.\\[.2cm]
