@@ -88,9 +88,11 @@
   {\reversemarginpar\strut\marginnote{{\small#1}}}%
 }
 
-\newcommand{\pub}[2]{%
+\newcommand{\textlength}[1]{\makebox[8cm][l]{#1}}
+
+\newcommand{\pub}[3]{%
   % Forces notes to appear on the left
-  {\reversemarginpar\strut\marginnote{{\small\makebox[1.4cm][l]{#1}{#2}}}}%
+  {\reversemarginpar\strut\marginnote{{\small#1\makebox[1cm][l]{#2}\\\makebox[1.4cm][l]{#3}}}}%
 }
 
 
@@ -197,20 +199,20 @@ Studies of civil engineering at Catholic University of Leuven
 \section*{Publications}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\pub{1946}{p4}%
+\pub{1946}{p4}{}%
 %
 G.\ Lemaître, The Primeval Atom --- An Essay on Cosmogony\\[.2cm]
 %
-\pub{1931}{p3}%
+\pub{1931}{p3}{}%
 G.\ Lemaître, L'Hypothèse de l'atome primitif\\[.2cm]
 %
-\pub{1927}{p2 sdfsdfsdf}%
+\pub{1927}{p2}{p119}%
 %
 G.\ Lemaître, \emph{Un univers homogène de masse constante et de rayon
 croissant rendant compte de la vitesse radiale des nébuleuses
 extragalactiques}, Annals of the Scientific Society of Brussels, 47A:41.\\[.2cm]
 %
-\pub{}{p1}G.\ Lemaître, Discussion sur l'évolution de l'univers
+\pub{}{p1}{}G.\ Lemaître, Discussion sur l'évolution de l'univers
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Honours}
