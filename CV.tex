@@ -28,7 +28,14 @@
 % TODO: Make sure you select a font with small caps here, unless you
 % also change the section style. See below.
 \defaultfontfeatures{Ligatures=TeX}
-\setmainfont[Renderer=Basic,Numbers={Proportional,OldStyle}]{MinionPro-Regular}
+\setmainfont[Renderer=Basic,Numbers={Proportional,OldStyle}]{MinionPro}[
+    Path=./MinionPro/,
+    Extension = .otf,
+    UprightFont=*-Regular,
+    BoldFont=*-Bold,
+    ItalicFont=*-It,
+    BoldItalicFont=*-BoldIt
+]
 \setsansfont[Scale=MatchLowercase]{Cabin Regular}
 \setmonofont[Scale=MatchLowercase]{Fira Mono}
 
